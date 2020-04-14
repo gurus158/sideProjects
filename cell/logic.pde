@@ -34,18 +34,16 @@ void draw() {
   current.visited = true;
   current.highlight();
   
-   //STEP 1
+
   Cell next = current.checkNeighbors();
   if (next != null) {
     next.visited = true;
 
-    // STEP 2
+  
     stack.add(current);
 
-    // STEP 3
     removeWalls(current, next);
 
-    // STEP 4
     current = next;
   } else if (stack.size() > 0) {
     current = stack.remove(stack.size()-1);

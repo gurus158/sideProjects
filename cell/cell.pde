@@ -50,16 +50,16 @@ Cell checkNeighbors(){
     int y = this.col*w;
     stroke(255);
     if (this.topWall) {
-      line(x    , y    , x + w, y);
+      line(x,y,x+w,y);
     }
     if (this.rightWall) {
-      line(x + w, y    , x + w, y + w);
+      line(x + w,y,x+w,y+w);
     }
     if (this.bottomWall) {
-      line(x + w, y + w, x    , y + w);
+      line(x+w,y+w,x,y+w);
     }
     if (this.leftWall) {
-      line(x    , y + w, x    , y);
+      line(x,y+w,x,y);
     }
 
     if (this.visited) {
