@@ -1,11 +1,11 @@
 int rows,cols;
-int w=40;
+int w=60;
 ArrayList<Cell> grid = new ArrayList<Cell>();
 
 Cell current;
 ArrayList<Cell> stack = new ArrayList<Cell>();
 public void settings() {
-  size(360, 360);
+  size(600, 600);
 }
 void setup() {
   //size(600, 600);
@@ -29,6 +29,7 @@ void draw() {
   background(51);
   for (int i = 0; i < grid.size(); i++) {
     grid.get(i).show();
+    
   }
 
   current.visited = true;
