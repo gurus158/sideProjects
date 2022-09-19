@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "dotenv": "^16.0.2",
+    "dotnet": "^1.1.4",
+    "hardhat": "^2.11.2"
+  }
+}
